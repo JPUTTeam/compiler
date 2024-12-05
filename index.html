@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="index.css">
+  <title>Code Editor</title>
+</head>
+<body>
+  <div class="container">
+    <!-- قسم المحرر -->
+    <div class="editor">
+      <div class="editor-header">
+        <img src="index.png" alt="Code Icon" class="editor-icon">
+        <h2>Code Editor</h2>
+      </div>
+      <textarea id="html" placeholder="Write your HTML here..."></textarea>
+      <textarea id="css" placeholder="Write your CSS here..."></textarea>
+      <textarea id="js" placeholder="Write your JavaScript here..."></textarea>
+      <button onclick="updatePreview()">Run Code</button>
+      
+    </div>
+
+    <!-- قسم المعاينة -->
+    <div class="preview-container">
+      <iframe class="preview" id="preview"></iframe>
+    </div>
+  </div>
+  <footer>
+    <p style="font-size: 15px;">JPUT Team © جميع الحقوق محفوظة </p>
+</footer>
+  <script src="index.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* إعدادات عامة */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #A8925D;
+  }
+  
+  /* الحاوية التي تضم المحرر ونافذة المعاينة */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1800px;
+    height: 100vh;
+  }
+  
+  /* قسم المحرر */
+  .editor {
+    width: 41%;
+    background: #143231;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  /* رأس المحرر (الصورة + النص) */
+  .editor-header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .editor-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 50px;
+    color: #A8925D;
+  }
+  
+  /* الحقول النصية */
+  textarea {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    resize: vertical;
+    font-family: monospace;
+    font-size: 14px;
+  }
+  footer {
+    background-color: #A8925D;
+    color: #143132;
+    padding: 1px 0;
+    position: fixed; 
+    bottom: 0;      
+    width: 100%;     
+    text-align: center;
+    font-size: 0.8rem;
+    z-index: 1000; 
+}
+
+  /* زر تشغيل الكود */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #A8925D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  button:hover {
+    background-color: #fff;
+  }
+  
+  /* قسم المعاينة */
+  .preview-container {
+    width: 56%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .preview {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
